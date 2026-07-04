@@ -1,0 +1,15 @@
+Booking 
+	1) Verify booking with a valid future departure date.
+	2)Verify that booking is successful when another vehicle is available for the same date, time, and route.
+	3) Verify booking for today's date when a vehicle is available.
+	4) Verify booking without selecting a departure date.
+	5) Verify booking when multiple users book the car same date, time, and route, provided vehicles are available move to the book page 
+	6)Verify that when the user clicks on the Pickup Location and Drop Location fields, the dropdown list displays all available routes.
+	7)Verify booking without selecting a pickup location.
+	8) Verify booking without selecting a drop-off location.
+	9) Verify booking with a valid number of people.
+	10) Verify booking with zero passengers.
+	11)Verify booking without entering the number of people.
+	12)Verify that the Number of People field does not accept alphabetic characters.
+	13) Verify that the Number of People field does not accept special symbol.
+	14) Verify that the Number of People field accepts values within the allowed limit (e.g., 1–7). ***
