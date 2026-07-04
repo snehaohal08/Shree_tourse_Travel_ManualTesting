@@ -1,0 +1,117 @@
+Shree Tours & Travels
+Test Scenarios
+
+Booking:
+	1) To Verify booking with a valid future departure date.
+	2) To Verify that booking is successful when another vehicle is available for the same date, time, and route.
+	3) To Verify booking for today's date when a vehicle is available.
+	4) To Verify booking without selecting a departure date.
+	5) To Verify that multiple users can book the same date, time, and route when vehicles are available, and the user is redirected to the Booking page successfully.
+	6) To Verify that when the user clicks on the Pickup Location and Drop Location fields, the dropdown list displays all available routes.
+	7) To Verify booking without selecting a pickup location.
+	8) To Verify booking without selecting a drop-off location.
+	9) To Verify booking with a valid number of people.
+	10) To Verify booking with zero passengers.
+	11) To Verify booking without entering the number of people.
+	12) To Verify that the Number of People field does not accept alphabetic characters.
+	13) To Verify that the Number of People field does not accept special characters.
+	14) To Verify that the Number of People field accepts values within the allowed limit (e.g., 1–7). ***
+	15) To Verify that the user is redirected from the Home page to the Booking page after entering valid booking details and clicking the Book Now button.
+	16) To verify that the user is not redirected to the Booking page when all mandatory fields are left empty.
+	17) To Verify that duplicate bookings are not created when the user clicks Book Now multiple times.
+	18) To Verify that past dates cannot be selected from the date picker.
+	19) To Verify that the system displays message("Vehicle is not available for this route.") when no vehicle is available.
+	20) To Verify that the selected pickup and drop locations are displayed correctly after selection.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Book car page :
+	
+	1) To Verify that all available cars are displayed based on the selected route, date, time, and number of passengers.
+	2) To Verify that the correct Pickup Location is displayed.
+	3) To Verify that the correct Drop Location is displayed.
+	4) To Verify that the selected Departure Date is displayed correctly.
+	5) To Verify that the selected Departure Time is displayed correctly.
+	6) To Verify that the correct number of passengers is displayed.
+	7) To Verify that the car Details is displayed correctly.
+	8) To Verify that the Edit Details popup opens when the user clicks the Edit Details button.
+	9) To Verify that all previously entered booking details are displayed correctly in the popup.
+	10) To Verify that the user can update the departure date.
+	11) To Verify that the user can update the departure time.
+	12) To Verify that the user can update the pickup location.
+	13) To Verify that the user can update the drop-off location.
+	14) To Verify that the user can update the number of passengers.
+	15) To Verify that clicking the Update button saves the modified booking details.
+	16) To Verify that the updated booking details are reflected on the Available Cars page.
+	17) To Verify that the popup closes successfully after updating the booking details.
+	18) To Verify that clicking the Cancel button closes the popup without saving any changes.
+	19) To Verify that clicking the (X) icon closes the popup.
+	20) To Verify that the user cannot update the booking without entering the number of passengers.
+	21) To Verify that all labels, placeholders, and dropdown values are displayed correctly. (UI Testing)
+	22) To Verify that the Update, Cancel, and Close (X) buttons are visible and clickable. (UI Testing)
+	
+	--------------------------------------------------------------------------------------------------------------
+
+	23) To Verify that the Mobile Number popup is displayed when the user clicks the Book Now button.
+	24) To Verify that the user can enter a valid 10-digit mobile number. (Verify that the mobile number field does not accept more than 10 digits.) ****
+	25) To Verify that clicking the Submit button with a registered mobile number redirects the user to the OTP popup.
+	26) To Verify that clicking the Submit button with an unregistered mobile number redirects the user to the Customer Details popup.
+	27) To Verify that clicking the Cancel button closes the popup.
+	28) To Verify that clicking the Close (X) button closes the popup.
+	29) To Verify that the Customer Details popup is displayed for an unregistered mobile number.
+	30) To Verify that the mobile number entered in the previous popup is displayed automatically.
+	31) To Verify that the user can enter a valid name.
+	32) To Verify that the Name field does not accept only special characters.
+	33) To Verify that the Name field accepts a maximum of 7-20 characters. (Verify that the system displays a validation message when the user enters more than 21 characters in the 		Name field.) ****
+	34) To Verify that the system does not allow duplicate email addresses. (The system should display an error message such as "Email already exists." and should not create a duplicate customer record.)
+
+	--------------------------------------------------------------------------------------------------------------------
+	
+	OTP Verification Popup:
+	
+	35) To Verify that the OTP popup is displayed after successful mobile number verification or customer registration.
+	36) To Verify that the user can enter the correct OTP.
+	37) To Verify that clicking Verify OTP with the correct OTP redirects the user to the booking-success page.
+	38) To Verify that an incorrect OTP displays an appropriate error message.
+	39) To Verify that an expired OTP cannot be verified
+	40) To Verify that the OTP field cannot be empty
+	41) To Verify that the OTP field accepts only numeric values.
+	42) To Verify that the OTP field does not accept alphabetic and special characters.
+	43) To Verify that the user cannot proceed with an invalid OTP.
+	44) To Verify that an appropriate error message is displayed when OTP verification fails.
+	45) To Verify that an expired OTP cannot be verified.
+	46) To Verify that the system displays an appropriate error message when a mobile number that is already registered is used for a new customer registration.
+	
+	-----------------------------------------------------------------------------------------------------------------------------
+	
+	Booking-success:
+	
+	1) To Verify that the booking-success page is displayed after successful OTP verification. (Verify that the Booking Confirmation page is not displayed if OTP verification fails.)
+	2) To Verify that a unique Booking ID is generated for every successful booking
+	3) To Verify that the Booking Date is displayed correctly.
+	4) To Verify that the Travel Date is displayed correctly.
+	5) To Verify that the Travel Time is displayed correctly.
+	6) To Verify that the Pickup Location is displayed correctly.
+	7) To Verify that the Drop Location is displayed correctly.
+	8) To Verify that the selected Vehicle Type is displayed correctly.
+	9) To Verify that the Number of Passengers is displayed correctly.
+	10) To Verify that the booking price is displayed correctly.
+	11) To Verify that the user Name is displayed correctly.
+	12) To Verify that the user Email ID is displayed correctly.
+	13) To Verify that the customer's Mobile Number is displayed correctly.
+	14) To Verify that all booking details match the information entered during the booking process.
+	15) To Verify that the booking confirmation page loads successfully without any errors.
+	16) To Verify that the Booking Confirmation page is not displayed when an invalid OTP is entered.
+	17) To Verify that clicking the "Back to Home" button redirects the user to the Home page.
+	18) To Verify that the Home page loads successfully after clicking the "Back to Home" button.
+	19) To Verify that clicking the "Download Booking Details" button downloads the booking PDF successfully.
+	20) To Verify that the downloaded PDF opens successfully.(Verify that an appropriate error message is displayed if PDF generation fails.)
+	21) TO Verify that the downloaded PDF contains the correct Booking ID.
+	22) To Verify that the downloaded PDF contains the correct user details (Name, Email, Mobile Number).
+	23) To Verify that the downloaded PDF contains the correct booking details (Travel Date, Travel Time, Pickup and Drop Location).
+	24) To Verify that the downloaded PDF contains the correct vehicle details (Vehicle Type, Number of Passengers, Price).
+	25) To Verify that the downloaded PDF displays all information in a proper format.
+	26) To Verify that clicking the "Download Booking Details" button multiple times does not generate duplicate or corrupted PDF files.
+	27) To Verify that the downloaded PDF is not corrupted and can be opened successfully.
+	28) To Verify that the booking details displayed on the Booking Confirmation page exactly match the details in the downloaded PDF.
+
